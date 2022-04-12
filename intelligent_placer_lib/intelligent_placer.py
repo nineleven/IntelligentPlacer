@@ -191,11 +191,13 @@ def check_image(path: Union[str, os.PathLike[str]]):
 
     loss, res = placer.run(img)
 
-    print(loss)
+    print('Loss:', loss)
 
     plt.subplot(122)
     plt.imshow(res)
     plt.show()
+
+    return loss < 5e-2
 
 
 if __name__ == '__main__':
