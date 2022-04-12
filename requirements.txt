@@ -2,3 +2,7 @@ jupyter
 scikit-image
 matplotlib
 opencv-python
+tqdm
+torch
+torchvision
+albumentations
